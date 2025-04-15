@@ -3,35 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Festival Budaya Austronesia - Merayakan Kekayaan Budaya dan Tradisi">
   <title>Festival Budaya Austronesia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Navbar -->
-  <!-- [Navbar dari komponen global di atas] -->
+  <header>
+    <div class="nav-container container">
+      <div class="logo">Austronesia Fest</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#schedule">Jadwal</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-toggle">
+        <span>&#9776;</span>
+      </div>
+    </div>
+  </header>
 
-  <section class="hero">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
     <div class="hero-content">
-      <h1>Festival Budaya Austronesia</h1>
-      <p>Merayakan Warisan Budaya Maritim dari Sabang hingga Pasifik</p>
-      <a href="about.html" class="btn">Pelajari Lebih Lanjut</a>
+      <h1>Selamat Datang di Festival Budaya Austronesia</h1>
+      <p>Merayakan Keindahan dan Kekayaan Budaya Austronesia</p>
+      <a href="#schedule" class="btn">Lihat Jadwal</a>
     </div>
   </section>
 
-  <section class="intro">
+  <!-- Jadwal -->
+  <section class="page-section" id="schedule">
     <div class="container">
-      <h2>Selamat Datang</h2>
-      <p>
-        Bergabunglah dalam perayaan budaya Austronesia — sebuah perjalanan lintas samudra melalui tarian, musik, kuliner, dan warisan leluhur dari berbagai pulau di Asia Tenggara dan Pasifik.
-      </p>
+      <h2>Jadwal Acara</h2>
+      <ul class="schedule">
+        <!-- Event items will be dynamically added here -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section class="page-section" id="gallery">
+    <div class="container">
+      <h2>Galeri</h2>
+      <div class="gallery-grid">
+        <img src="images/gallery-1.jpg" alt="Event 1">
+        <img src="images/gallery-2.jpg" alt="Event 2">
+        <img src="images/gallery-3.jpg" alt="Event 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <h2>Kontak Kami</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
-  <!-- [Footer dari komponen global di atas] -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Festival Budaya Austronesia</p>
+      <div class="social-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
