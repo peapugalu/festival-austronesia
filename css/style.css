@@ -77,6 +77,12 @@ header {
   color: #F2C94C;
 }
 
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 /* ========== Hero Section ========== */
 .hero {
   background: url('../images/bg-hero.jpg') center/cover no-repeat;
@@ -148,27 +154,7 @@ header {
   text-align: justify;
 }
 
-/* ========== Jadwal List ========== */
-.schedule {
-  list-style: none;
-  padding-left: 0;
-}
-
-.schedule li {
-  margin-bottom: 12px;
-  padding-left: 1rem;
-  position: relative;
-}
-
-.schedule li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #F2C94C;
-  font-weight: bold;
-}
-
-/* ========== Galeri Grid ========== */
+/* ========== Gallery ========== */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -244,12 +230,8 @@ footer {
     display: none;
   }
 
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
+  .navbar-toggle {
+    display: block;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-}
+  .
